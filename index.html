@@ -64,8 +64,8 @@
                 <p>Software Engineer</p>
 
                 <div class="buttons pt-3">
-                    <button class="btn btn-primary rounded">HIRE ME</button>
-                    <button class="btn btn-dark rounded">DOWNLOAD CV</button>
+                    <a class="btn btn-primary rounded" role="button" href="https://www.facebook.com/alexcao194/">HIRE ME</a>
+                    <a class="btn btn-dark rounded" role="button" href="https://www.facebook.com/alexcao194/">DOWNLOAD CV</a>
                 </div>      
 
                 <div class="socials mt-4">
@@ -113,7 +113,7 @@
                         I specialize in building robust, user-friendly applications that combine functionality and design. 
                         Beyond Flutter, I also take on projects using <b>Android (Jetpack Compose)</b> and <b>iOS (SwiftUI)</b>, delivering high-quality solutions tailored to clients' needs. 
                     </p>
-                    <button class="btn btn-primary rounded mt-3">DOWNLOAD CV</button>                   
+                    <a class="btn btn-primary rounded mt-3" role="button" href="https://www.facebook.com/alexcao194/">Download CV</a>
                 </div>
             </div>
         </div>
@@ -142,7 +142,7 @@
                         <div class="overlay">
                             <div class="overlay-infos">
                                 <h5>Simple Sudoku</h5>
-                                <a href="#"><i class="ti-link"></i></a>
+                                <a href="https://www.simplesudoku.pullstack.id.vn/"><i class="ti-link"></i></a>
                             </div>                              
                         </div>
                     </div>                
@@ -383,7 +383,7 @@
                             <p class="mb-3">Let's create something amazing together!</p>
                         </div>
                         <div class="col-sm-3 text-center text-sm-right">
-                            <button class="btn btn-light rounded">Hire Me!</button>
+                            <a class="btn btn-light rounded" href="https://www.facebook.com/alexcao194/">Hire me</a>
                         </div>
                     </div>
                 </div> 
@@ -401,18 +401,45 @@
                 <div class="form">
                     <h6 class="subtitle">Available 24/7</h6>
                     <h6 class="section-title mb-4">Get In Touch</h6>
-                    <form>
+                    <form 
+                        onsubmit="openEmailApp(event)">
                         <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                            <input 
+                                type="text" 
+                                id="subject" 
+                                class="form-control" 
+                                placeholder="Subject" 
+                                required>
                         </div>
                         <div class="form-group">
-                            <input type="subject" class="form-control" id="exampleInputSubject" placeholder="Subject" required>
+                            <textarea 
+                                id="message" 
+                                cols="30" 
+                                rows="5" 
+                                class="form-control" 
+                                placeholder="Message" 
+                                required></textarea>
                         </div>
-                        <div class="form-group">
-                            <textarea name="contact-message" id="" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block rounded w-lg">Send Message</button>
+                        <button 
+                            type="submit" 
+                            class="btn btn-primary btn-block rounded w-lg">
+                            Send Message
+                        </button>
                     </form>
+
+                    <script>
+                    function openEmailApp(event) {
+                        event.preventDefault(); // Prevent the form from submitting normally
+                        const subject = encodeURIComponent(document.getElementById('subject').value);
+                        const message = encodeURIComponent(document.getElementById('message').value);
+
+                        // Construct the mailto link
+                        const mailtoLink = `mailto:admin@pullstack.id.vn?subject=${subject}&body=${message}`;
+                        
+                        // Open the default email app
+                        window.location.href = mailtoLink;
+                    }
+                    </script>
                 </div>
                 <div class="contact-infos">
                     <div class="item">
@@ -440,7 +467,7 @@
             </div>
         </div>  
         <div id="map">
-            <iframe src="https://snazzymaps.com/embed/61257"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.4693611092935!2d105.77474204028063!3d21.013897688368363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313455070ccdb5c9%3A0xbcaed3cb85ca429!2zNTkgxJAuIE3hu4UgVHLDrCwgTeG7hSBUcsOsLCBOYW0gVOG7qyBMacOqbSwgSMOgIE7hu5lpLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1737900142849!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>      
     </section>
     <!-- End of Contact Section -->
@@ -450,7 +477,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-sm-6">
-                    <p>Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="http://www.devcrud.com" target="_blank">Dev Pullstack</a></p>
+                    <p>Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="#">Dev Pullstack</a></p>
                 </div>
                 <div class="col-sm-6">
                     <div class="socials">
