@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Pullstack</title>
+    <link rel="icon" href="img/fav.png" type="image/png">
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <!-- Start Header -->
+    <div class="header" id="header">
+        <div class="container">
+            <a href="../../" class="logo">Dev Pullstack</a>
+            <ul class="main-nav">
+              <li><a href="index.html">Oxford Dictionary</a></li>
+              <li><a href="tos.html">Terms Of Use</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="#">Contact me</a>
+                <div class="mega-menu">
+                    <div class="image">
+                        <img src="../../img/menu-img.png" alt="megmenu-image">
+                    </div>
+                    <ul class="links">
+                        <li>
+                          <a href="https://facebook.com/alexcao194"><i class="fa-brands fa-square-facebook"></i> Facebook</a>
+                        </li>
+                        <li>
+                          <a href="mailto:alexcao194@email.com?subject=I%20Know%20You%20From%20Your%20Landing%20Page"><i class="fa-solid fa-envelope"></i> Email</a>
+                        </li>
+                        <li>
+                          <a href="http://t.me/alexcao194"><i class="fa-brands fa-telegram"></i> Telegram</a>
+                        </li>
+                      </ul>
+                      <ul class="links">
+                        <li>
+                          <a href="https://github.com/alexcao194"><i class="fa-brands fa-github"></i> Github</a>
+                        </li>
+                        <li>
+                          <a href="https://www.youtube.com/@dev.pullstack"><i class="fa-brands fa-youtube"></i> Youtube</a>
+                        </li>
+                        <li>
+                          <a href="https://www.tiktok.com/@dev.pullstack"><i class="fa-brands fa-tiktok"></i> Tiktok</a>
+                        </li>
+                      </ul>
+                </div>
+                <!-- End MegMenu -->
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Header -->
+     <!-- Start events -->
+     <div class="events" id="events">
+      <div class="container list">
+        <img class="feature" src="img/feature.png" alt="">
+        <div class="info">
+          <h1 style="color: #2196f3;">Oxford Dictionary</h1>
+          <p>Expand your English vocabulary effortlessly with our app, featuring over 6,000 of the most common words from the Oxford Dictionary. Designed to help you master English vocabulary, it offers powerful tools for learning and review. Add new words to your personal list and revisit them anytime with flashcards and reminders. Stay consistent with custom notifications, whether for random words and their meanings or periodic study sessions. Perfect for students, professionals, and language enthusiasts alike, this app is your ideal companion for achieving your English language goals. Start building your vocabulary today!</p>
+        </div>
+        <div class="subscribe">
+          <form id="subscribeForm">
+            <input type="email" id="emailInput" placeholder="Enter Your Email" required>
+            <input type="submit" value="Feedback">
+          </form>
+        </div>
+        
+        <script>
+          document.getElementById("subscribeForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form from refreshing the page
+            
+            let email = document.getElementById("emailInput").value;
+            
+            if (email) {
+              let mailtoLink = `mailto:${email}?subject=Feed back for Oxford Dictionary`;
+              window.location.href = mailtoLink; // Open default email client
+            } else {
+              alert("Please enter a valid email address.");
+            }
+          });
+        </script>                
+      </div>
+     </div>
+    <!-- End events -->
+          <!-- Start Landing -->
+            <div class="landing">
+              <div class="container">
+                <div class="slider">
+                  <div class="list">
+                    <div class="item">
+                      <div class="text">
+                        <h1>Oxford Dictionary</h1>
+                        <p>Explore a rich vocabulary with over 6,000 common words from the Oxford Dictionary. Each word comes with precise definitions, helping you understand and use them correctly in context.</p>
+                      </div>
+                      <div class="screenshot">
+                          <img src="img/screenshot_1.png" alt="landing-image">
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="text">
+                        <h1>Flashcard</h1>
+                        <p>Enhance your memory with our smart Flashcard system. Practice daily, review learned words, and reinforce your knowledge using the spaced repetition method.</p>
+                      </div>
+                      <div class="screenshot">
+                          <img src="img/screenshot_2.png" alt="landing-image">
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="text">
+                        <h1>Reminder with Notifications</h1>
+                        <p>Stay consistent with your learning habits using smart reminders. Customize notifications to receive random words or periodic review prompts, ensuring steady and effective vocabulary improvement.</p>
+                      </div>
+                      <div class="screenshot">
+                          <img src="img/screenshot_3.png" alt="landing-image">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="buttons">
+                    <button id="prev"><</button>
+                    <button id="next">></button>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- End Landing -->
+             <!-- Start FAQs -->
+              <div class="faqs" id="faqs">
+                <h2 class="main-title">FAQS</h2>
+                <div class="container">
+                  <div class="section">
+                    <div class="faq">
+                      <div class="question">
+                          <h3>What types of applications do you specialize in creating?</h3>
+                          <i class="fa-solid fa-angle-up"></i>
+                      </div>
+                      <div class="answer">
+                        <p>We specialize in developing a wide range of applications, including E-commerce platforms, AI-powered Tools, Game, and custom web applications tailored to meet your specific needs.</p>
+                      </div>
+                    </div>
+
+                    <div class="faq">
+                      <div class="question">
+                          <h3>How long does it take to complete an application project?</h3>
+                          <i class="fa-solid fa-angle-up"></i>
+                      </div>
+                      <div class="answer">
+                        <p>The timeline for completing an application varies depending on the complexity and requirements. On average, a standard application takes 4-6 weeks, while more complex projects may take longer.</p>
+                      </div>
+                    </div>
+
+                    <div class="faq">
+                      <div class="question">
+                          <h3>Do you offer application maintenance and support after the project is completed?</h3>
+                          <i class="fa-solid fa-angle-up"></i>
+                      </div>
+                      <div class="answer">
+                        <p>Yes, we offer ongoing maintenance and support services to ensure your application remains up-to-date, secure, and fully functional. We can provide customized support plans based on your needs.</p>
+                      </div>
+                    </div>
+
+                    <div class="faq">
+                      <div class="question">
+                          <h3>Can you help with application content creation and SEO optimization?</h3>
+                          <i class="fa-solid fa-angle-up"></i>
+                      </div>
+                      <div class="answer">
+                        <p>Absolutely! We offer content creation services to craft compelling copy for your application, as well as SEO optimization to improve your application's visibility on search engines and drive more traffic to your business.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             <!-- End FAQs -->
+
+              <!-- Start Footer -->
+               <div class="footer">
+                <div class="container">
+                  <div class="list-item">
+                    <div class="info">
+                      <a href="#" class="logo">Alexcao</a>
+                      <p>
+                        59 Me Tri<br>
+                        Nam Tu Liem, Ha Noi<br>
+                        Vietnam<br>
+                      </p>
+                    </div>
+                    <div class="list">
+                      <h3>Products</h3>
+                      <ul>
+                        <li><a href="../../#product">Products</a></li>
+                        <li><a href="../../#faqs"></i>FAQs</a></li>
+                      </ul>
+                    </div>
+                    <div class="list">
+                      <h3>Services</h3>
+                      <ul>
+                        <li><a href="../../#outsourcing">Outsourcing</a></li>
+                        <li><a href="../../#testimonials">Testimonials</a></li>
+                      </ul>
+                    </div>
+                    <div class="list">
+                      <h3>Hire me</h3>
+                      <ul>
+                        <li><a href="../../#hire">Hire me</a>
+                        </li>
+                        <li><a href="../../#pricing">Pricing Plans</a></li>
+                      </ul>
+                    </div>
+                    <div class="list">
+                      <h3>Follow</h3>
+                      <ul class="media">
+                        <li>
+                          <a href="https://facebook.com/alexcao194"><i class="fa-brands fa-square-facebook"></i></a>
+                        </li>
+                        <li>
+                          <a href="http://t.me/alexcao194"><i class="fa-brands fa-telegram"></i></a>
+                        </li>
+                        <li>
+                          <a href="https://github.com/alexcao194"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li>
+                          <a href="https://www.youtube.com/@dev.pullstack"><i class="fa-brands fa-youtube"></i></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="copyright">
+                      <p> &copy; 2025 <b>Dev Pullstack</b> All Right Reseved</p>
+                  </div>
+                </div>
+               </div>
+              <!-- End Footer -->
+      <script src="../../js/script.js"></script>
+</body>
+</html>

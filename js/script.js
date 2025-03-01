@@ -58,45 +58,6 @@ function topScroll(){
 };
 
 // ------------------------------------------------------------
-// Event Countdown:
-
-const eventTime = new Date("Jan 1, 2025 15:30:00").getTime();
-
-const interval = setInterval(() => {
-    const now = new Date().getTime();
-    const duration = eventTime - now;
-
-    // If the countdown is finished
-    if(duration < 0){
-        clearInterval(interval);
-        updateDuration(0);
-        return;
-    }
-
-    updateDuration(duration);
-
-}, 1000);
-
-function updateDuration(duration){
-
-    //imp:
-    // 1000 milliseconds = 1 second
-    // 60 * 1000 milliseconds = 1 minute
-    // 60 * 60 * 1000 milliseconds = 1 hour
-    // 24 * 60 * 60 * 1000 milliseconds = 1 day
-
-    const days = Math.floor(duration / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((duration % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((duration % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((duration % (1000 * 60)) / 1000);
-
-    document.getElementById('days').innerHTML = days;
-    document.getElementById('hours').innerHTML = hours;
-    document.getElementById('minutes').innerHTML = minutes;
-    document.getElementById('seconds').innerHTML = seconds;
-}
-
-// ------------------------------------------------------------
 // FAQs:
 
 const faqs = document.querySelectorAll(".faq");

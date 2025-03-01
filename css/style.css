@@ -347,6 +347,12 @@ a{
     margin-left: 20px;
     animation:  up-and-down 3s linear infinite;
 }
+.landing .screenshot img{
+    position: relative;
+    width: 200px;
+    margin-left: 20px;
+    animation:  up-and-down 3s linear infinite;
+}
 @media (max-width: 991px){
     .landing .image img{
         display: none;
@@ -675,8 +681,17 @@ a{
     align-items: center;
     flex-wrap: wrap;
 }
+.events .list{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 .events .container img{
     max-width: 450px;
+}
+.events .container .feature{
+    max-width: 450px;
+    border-radius: 16px;
 }
 @media (max-width:991px){
     .events .container img{
