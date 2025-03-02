@@ -107,6 +107,9 @@ a{
     -webkit-box-shadow:  0 0 10px #ddd;
     -moz-box-shadow:  0 0 10px #ddd;
     box-shadow: 0 0 10px #ddd;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
 .header .container{
     display: flex;
@@ -141,6 +144,7 @@ a{
 .header .main-nav > li:hover .mega-menu{
     opacity: 1;
     z-index: 100;
+    display: flex;
     top: calc(100% + 1px);
 
 }
@@ -187,10 +191,10 @@ a{
     background-color: #fff;
     border-bottom: 3px solid var(--main-color);
     z-index: -1;
-    display: flex;
+    display: none;
+    opacity: 0;
     gap: 40px;
     top: calc(100% + 50%);
-    opacity: 0;
     transition: top 0.3s, opacity 0.3s;
 }
 @media (max-width: 767px){
