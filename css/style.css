@@ -143,7 +143,7 @@ a{
 } 
 .header .main-nav > li:hover .mega-menu{
     opacity: 1;
-    z-index: 100;
+    visibility: visible;
     display: flex;
     top: calc(100% + 1px);
 
@@ -190,8 +190,9 @@ a{
     padding: 30px;
     background-color: #fff;
     border-bottom: 3px solid var(--main-color);
-    z-index: -1;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
     opacity: 0;
     gap: 40px;
     top: calc(100% + 50%);
